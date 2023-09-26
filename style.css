@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,300;1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+body {
+    background-color: #ffffff;
+}
+header {
+    padding: 40px 9%;
+}
+.menu {
+    list-style: none; 
+    background-color: pink; 
+    overflow: hidden;
+    padding: 10px 20%;
+}
+
+.menu li {
+    float: left; 
+}
+
+.menu li a {
+    display: block;
+    color: #775382;
+    text-align: center; 
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.menu li a:hover {
+    background-color: #dbdbdb; 
+}
+h1 {
+    text-align: center;
+    transition: 0.5s;
+    color: #775382;
+}   
+p{
+    text-align: center;
+    transition: 0.5s;
+    color: #775382;
+}
+main {
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 39%;
+    height: 50em;
+    margin: auto;
+}
+.flip-card {
+    background-color: transparent;
+    width: 310px;
+    height: 379px;
+    perspective: 1000px;
+    font-family: sans-serif;
+    margin-top: 10px;
+    
+  }
+  
+  .title {
+    font-size: 1.5em;
+    font-weight: 900;
+    text-align: center;
+    margin: 0;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border: 1px solid pink;
+    border-radius: 1rem;
+  }
+  
+  .flip-card-front {
+    background: linear-gradient(120deg, pink 60%, rgb(255, 231, 222) 88%,
+       rgb(255, 230, 236) 40%, rgb(254, 141, 160) 48%);
+    color: pink;
+  }
+  
+  .flip-card-back {
+    background: linear-gradient(120deg, pink 60%, rgb(255, 231, 222) 88%,
+    rgb(255, 230, 236) 40%, rgb(254, 141, 160) 48%);
+ color: pink;
+    transform: rotateY(180deg);
+  }
+  .posicao{
+    display: flex;
+    justify-content: space-around;
+  }
+  h2{
+    color: #775382;
+}
+#medica1{
+    width: 310px;
+    margin-bottom: 25px;
+}
+#medica2{
+    width: 350px;
+    margin-bottom: -4px;
+}
+#medica3{
+    width: 290px;
+}
+#medica4{
+    width: 290px;
+}
+#medica5{
+    width: 290px;
+}
+/* .card {
+    max-width: 300px;
+    border-radius: 0.5rem;
+    background-color: #f1f0f1;
+    box-shadow: 1px 10px 5px  rgba(0, 0, 0, 0.494);
+
+  }
+  
+  .card a {
+    text-decoration: none
+  }
+  
+  .content {
+    padding: 1.1rem;
+  }
+  
+  .image {
+    object-fit: cover;
+    width: 100%;
+    height: 150px;
+    background-image: url(img/Clínica-Médica.jpeg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 0.5em;
+  }
+  
+  #title {
+    color: #111827;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .desc {
+    margin-top: 0.5rem;
+    color: #6B7280;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+  
+  .action {
+    display: inline-flex;
+    margin-top: 1rem;
+    color: #ffffff;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 500;
+    align-items: center;
+    gap: 0.25rem;
+    background-color: #2563EB;
+    padding: 4px 8px;
+    border-radius: 4px;
+  }
+  
+  .action span {
+    transition: .3s ease;
+  }
+  
+  .action:hover span {
+    transform: translateX(4px);
+  }
+.tudo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
