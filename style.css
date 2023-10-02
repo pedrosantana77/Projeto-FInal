@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,300;1,500&display=swap');
-
+/* MENU */
 * {
     margin: 0;
     padding: 0;
@@ -12,30 +12,91 @@ body {
     background-color: #ffffff;
     font-family: 'Roboto', sans-serif;
 }
-header {
-    padding: 40px 9%;
-}
 .menu {
-    list-style: none; 
-    background-color: pink; 
-    overflow: hidden;
-    padding: 10px 20%;
-}
-.menu li {
-    float: left; 
+  background-color:pink;
 }
 
-.menu li a {
-    display: block;
-    color: #775382;
-    text-align: center; 
-    padding: 14px 16px;
-    text-decoration: none;
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-.menu li a:hover {
-    background-color: #dbdbdb; 
+.menu ul li {
+  display: inline-block;
+  position: relative;
 }
+
+.menu ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: block;
+}
+
+.menu ul li a:hover {
+  background-color: rgb(255, 145, 164);
+}
+
+.submenu-content {
+  display: none;
+  position: absolute;
+  background-color: pink;
+  z-index: 1;
+}
+
+.submenu:hover .submenu-content {
+  display: block;
+}
+
+.content {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+header {
+  background-color: pink;
+  color: #fff;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: pink;
+}
+
+.ajuste{
+
+  width: 100%;
+  height: 30%;
+  
+}
+.carousel-item img{
+
+  width: 1980px;
+  height: 490;
+}
+
+/* QUEM SOMOS */
 #conheca {
     text-align: center;
     transition: 0.5s;
@@ -57,6 +118,8 @@ main {
     height: 50em;
     margin: auto;
 }
+/* MEDICOS EXPECIALISTAS */
+
 .flip-card {
     background-color: transparent;
     width: 310px;
@@ -148,6 +211,7 @@ main {
 }
 #nome{
   color: #775382;
+  font-family: 'Roboto';
 }
 /* Estilos para o botão */
 .link{
@@ -168,7 +232,7 @@ main {
 }
 
 .carousel{
-  margin-top: -17px;
+  margin-top: 0px;
 }
 .carousel-indicators{
   margin-top: 150px;
@@ -255,72 +319,164 @@ main {
 .ver-mais:hover {
   background-color: #0056b3;
 }
+/* CADASTRO */
+.card2 {
+  width: 50em;
+  height: 500px;
+  display: flex;
+  justify-content: space-between;
+  background: #f2f8f9;
+  border: 1px solid white;
+  margin-top: 10%;
+  border-radius: 5%;
+}
 
-/* .card {
-    max-width: 300px;
-    border-radius: 0.5rem;
-    background-color: #f1f0f1;
-    box-shadow: 1px 10px 5px  rgba(0, 0, 0, 0.494);
+.form2 {
+  padding: 25px;
+}
+.tudo2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -9%;
+}
+.card_header2 {
+  display: flex;
+  align-items: center;
+}
 
-  }
-  
-  .card a {
-    text-decoration: none
-  }
-  
-  .content {
-    padding: 1.1rem;
-  }
-  
-  .image {
-    object-fit: cover;
-    width: 100%;
-    height: 150px;
-    background-image: url(img/Clínica-Médica.jpeg);
-    background-position: center;
-    background-size: cover;
-    border-radius: 0.5em;
-  }
-  
-  #title {
-    color: #111827;
-    font-size: 1.125rem;
-    line-height: 1.75rem;
-    font-weight: 600;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .desc {
-    margin-top: 0.5rem;
-    color: #6B7280;
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-  }
-  
-  .action {
-    display: inline-flex;
-    margin-top: 1rem;
-    color: #ffffff;
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-    font-weight: 500;
-    align-items: center;
-    gap: 0.25rem;
-    background-color: #2563EB;
-    padding: 4px 8px;
-    border-radius: 4px;
-  }
-  
-  .action span {
-    transition: .3s ease;
-  }
-  
-  .action:hover span {
-    transform: translateX(4px);
-  }
-.tudo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
+.negoço{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  right: 40px;
+
+}
+
+.card svg {
+  color: #7878bd;
+  margin-bottom: 20px;
+  margin-right: 5px;
+}
+
+.form_heading {
+  padding-bottom: 20px;
+  font-size: 21px;
+  color: #7878bd;
+  margin-top: -100%;
+}
+
+.field {
+  padding-bottom: 10px;
+  /* margin-top: 20%;
+  margin-right: -29%; */
+}
+.field2 {
+  padding-bottom: 10px;
+  /* margin-top: 33%;
+  margin-right: -25%; */
+}
+.telefone{
+  padding-bottom: 10px;
+  /* margin-top: 45%;
+  margin-left: ; */
+}
+.field4 {
+  padding-bottom: 10px;
+  /* margin-top: 33%;
+  margin-right: -25%; */
+  margin: 10px;
+} 
+.nascimento{
+  width: 15.6em;
+}
+.input {
+  border-radius: 5px;
+  background-color: rgb(255, 232, 236);
+  padding: 5px;
+  width: 100%;
+  color: #000000;
+  border: 1px solid #dadaf7
+}
+
+.input:focus-visible {
+  outline: 1px solid #aeaed6;
+}
+
+.input::placeholder {
+  color: #bcbcdf;
+}
+
+label {
+  color: #B2BAC8;
+  font-size: 14px;
+  display: block;
+  padding-bottom: 4px;
+}
+
+.button2 {
+  background-color: rgb(255, 143, 162);
+  margin-top: 10px;
+  font-size: 14px;
+  padding: 7px 12px;
+  height: auto;
+  font-weight: 500;
+  color: white;
+  border: none;
+}
+
+.button2:hover {
+  background-color: pink;
+}
+.imagem_cadastro{
+  width: 20em;
+  margin-top: -17px;
+}
+#conheca2 {
+  text-align: center;
+  transition: 0.5s;
+  color: #775382;
+  font-size: 2.5em;
+  line-height: normal;
+  font-weight: 700;
+  margin-bottom: 0.5em;
+  margin-top: 3%;
+}   
+
+/* RODAPÉ */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  background-color: pink;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.icon {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+.icon img {
+  width: 30px;
+  height: 30px;
+}
+
+.icon:hover {
+  color: #0073e6;
+}
