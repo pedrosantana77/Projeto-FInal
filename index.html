@@ -4,24 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clínica Santana</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <body>
   <!-- MENU -->
   <header>
     <nav class="menu">
       <ul>
-          <li><a href="#home">Home</a></li>
+        
+          <li><a data-aos="flip-left" href="#home">Home</a></li>
           <li class="submenu">
-              <a href="#conheca2">Cadastro</a>
+              <a data-aos="flip-left" href="#conheca2">Cadastro</a>
               <ul class="submenu-content">
                   
     
               </ul>
           </li>
           <li class="submenu">
-              <a href="#">Tratamentos para a Face</a>
+              <a data-aos="flip-left" href="#">Tratamentos para a Face</a>
               <ul class="submenu-content">
                   <li><a href="#">Limpeza de Pele</a></li>
                   <li><a href="#">Tratamentos Anti-idade</a></li>
@@ -31,7 +37,7 @@
               </ul>
           </li>
           <li class="submenu">
-              <a href="#">Tratamentos para o Corpo</a>
+              <a data-aos="flip-left" href="#">Tratamentos para o Corpo</a>
               <ul class="submenu-content">
                   <li><a href="#">Depilação</a></li>
                   <li><a href="#">Massagem modeladora</a></li>
@@ -40,7 +46,7 @@
               </ul>
           </li>
           <li class="submenu">
-              <a href="#">Tratamentos Capilares</a>
+              <a data-aos="flip-left" href="#">Tratamentos Capilares</a>
               <ul class="submenu-content">
                   <li><a href="#">Hidratação</a></li>
                   <li><a href="#">Nutrição</a></li>
@@ -52,54 +58,42 @@
     </nav>
   </header>
 <!-- CAROUSEL -->
-    <div id="carouselExampleIndicators" class="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="img/Studio Santana (2).png" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="img/1.png" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="img/2.png" class="d-block w-100" alt="...">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
+<div id="carouselExampleIndicators" class="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/Studio Santana (2).png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="img/1.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="img/2.png" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
 
+    <!-- QUEM SOMOS? -->
+  
       <div class="card">
-        <p class="card-title">Quem Somos?</p>
         <p class="small-desc">
-            Studio Santana de Estética: O Seu Destino para Beleza e Bem-Estar Completo<br>
-
-    Bem-vindo ao Studio Santana de Estética, onde a sua busca por beleza e bem-estar encontra seu lar. Somos uma clínica de excelência que oferece uma gama diversificada de tratamentos que abrangem desde cuidados faciais, corporais, capilares, podologia até a nutrição. Nossa missão é promover a saúde, a confiança e a autoestima em um ambiente que prioriza a qualidade e a personalização dos serviços.
-    <br>
-    Nossa Abordagem
-    <br>
-    No Studio Santana de Estética, compreendemos que cada pessoa é única e tem necessidades específicas. Por isso, nossa equipe altamente qualificada se dedica a fornecer tratamentos personalizados que atendem aos seus objetivos e desejos individuais. Oferecemos:
-    <br>
-    1. Tratamentos Faciais: Acreditamos que a beleza começa com uma pele saudável e radiante. Nossos especialistas em estética facial oferecem desde limpezas de pele revitalizantes até procedimentos avançados de rejuvenescimento, ajudando você a alcançar uma aparência vibrante.
-    <br>           
-    2. Cuidados Corporais: Entendemos a importância de se sentir bem em seu próprio corpo. Oferecemos uma ampla variedade de tratamentos corporais que incluem massagens relaxantes, procedimentos de contorno corporal e muito mais para ajudar a esculpir e revitalizar seu corpo.
-    <br>
-    3. Tratamentos Capilares: Seu cabelo merece atenção especial. Nossa equipe de especialistas em cabelo oferece soluções para problemas capilares, desde tratamentos de crescimento até terapias para manter um cabelo saudável e exuberante.
-    <br>
-    4. Podologia Profissional: Os seus pés também merecem cuidados de qualidade. Oferecemos serviços de podologia que vão desde tratamentos para unhas até a resolução de problemas de saúde relacionados aos pés.
-    <br>
-    5. Nutrição Personalizada: Acreditamos que a alimentação desempenha um papel fundamental na saúde e na beleza. Nossos nutricionistas dedicados ajudam a criar planos alimentares personalizados, promovendo um estilo de vida saudável e a beleza de dentro para fora.
-    <br>
+          <h1 id="conheca2">STUDIO SANTANA DE ESTÉTICA
+            <br>SEU REFÚGIO PARA BELEZA E BEM-ESTAR COMPLETO:</h1>
+            <p>Bem-vindo ao Studio Santana de Estética, onde a sua busca por beleza e bem-estar encontra seu lar.
+              Somos uma clínica de excelência que oferece uma gama diversificada de tratamentos que abrangem desde cuidados faciais, corporais, capilares, podologia até a nutrição. Nossa missão é promover a saúde, a confiança e a autoestima em um ambiente que prioriza a qualidade e a personalização dos serviços.
+            </p> 
         </p>
         <div class="go-corner">
         </div>
@@ -128,7 +122,8 @@
 
     <h1 id="conheca">CONHEÇA NOSSA EQUIPE:</h1>
     <article class="posicao">
-        <div class="flip-card">
+        <div data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom" data-aos-delay="100" class="flip-card">
             <div class="flip-card-inner">
                 <div class="flip-card-front">
                     <p class="title"><img id="medica1" src="img/Design sem nome (3) (1).png"></p>
@@ -140,7 +135,8 @@
                 </div>
             </div>
         </div>
-        <div class="flip-card">
+        <div data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"   data-aos-delay="250" class="flip-card">
             <div class="flip-card-inner">
                 <div class="flip-card-front">
                     <p class="title"><img id="medica2" src="img/Design sem nome (4) (1).png"></p>
@@ -152,7 +148,8 @@
                 </div>
             </div>
         </div>
-        <div class="flip-card">
+        <div data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"  data-aos-delay="400"  class="flip-card">
             <div class="flip-card-inner">
                 <div class="flip-card-front">
                     <p class="title"><img id="medica3" src="img/Design sem nome (5) (1).png"></p>
@@ -164,7 +161,8 @@
                 </div>
             </div>
         </div>
-        <div class="flip-card">
+        <div data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"   data-aos-delay="600" class="flip-card">
             <div class="flip-card-inner">
                 <div class="flip-card-front">
                     <p class="title"><img id="medica4" src="img/Design sem nome (7) (1).png"></p>
@@ -177,7 +175,8 @@
                 </div>
             </div>
         </div>
-        <div class="flip-card">
+        <div data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"   data-aos-delay="800" class="flip-card">
             <div class="flip-card-inner">
                 <div class="flip-card-front">
                     <p class="title"><img id="medica5" src="img/Design sem nome (7).png"></p>
@@ -193,9 +192,10 @@
 <!-- card de cadastro -->
 
   <h1 id="conheca2">FAÇA SEU CADASTRO:</h1>
-    <div class="tudo2">
+    <div data-aos="fade-up"
+    data-aos-anchor-placement="top-bottom" data-aos-delay="100" class="tudo2">
       <form class="form card2">
-        <div class="card_header2">
+        <div  class="card_header2">
           <img class = "imagem_cadastro" src="img/Secretaria.png">
         </div>
         <div class="negoço">
@@ -215,8 +215,8 @@
             <label for="password">Data de Nascimento</label>
             <input class="input" name="user_dataNascimento" type="date" placeholder="dataNascimento" id="dataNascimento">
           </div>
-          <div class="field4">
-            <button class="button2">Cadastrar</button>
+          <div  class="field4">
+            <button  class="button2">Cadastrar</button>
           </div>
         </div>
       </form>
