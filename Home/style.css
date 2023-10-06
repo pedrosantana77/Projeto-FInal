@@ -147,6 +147,7 @@ p{
   border: 0;
   margin: 10px;
   font-family: Arial, Helvetica, sans-serif;
+  
 }
 
 .card:hover:before {
@@ -177,6 +178,8 @@ p{
     perspective: 1000px;
     font-family: sans-serif;
     margin-top: 10px;
+    margin: 0;
+    padding: 0;
     
   }
   
@@ -234,31 +237,14 @@ p{
   h2{
     color: #775382;
 }
-#medica1{
-    width: 300px;
-    margin-top: -4px;
-    margin-bottom: -4px;
-}
-#medica2{
-  width: 300px;
-  margin-top: -4px;
+
+.medico {
+  width: 100%;
+  margin-top: -15px;
   margin-bottom: -4px;
+  padding: 0;
 }
-#medica3{
-  width: 300px;
-  margin-top: -4px;
-  margin-bottom: -4px;
-}
-#medica4{
-  width: 300px;
-  margin-top: -4px;
-  margin-bottom: -4px;
-}
-#medica5{
-  width: 300px;
-  margin-top: -4px;
-  margin-bottom: -4px;
-}
+
 #nome{
   color: #775382;
   font-family: 'Roboto';
@@ -296,6 +282,8 @@ p{
 }
 /* CADASTRO */
 .card2 {
+  padding: 0;
+  margin: 0;
   width: 50em;
   height: 500px;
   display: flex;
@@ -307,13 +295,15 @@ p{
 }
 
 .form2 {
-  padding: 25px;
+  padding: 0;
+  margin: 0;
 }
 .tudo2{
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: -9%;
+  padding: 0;
 }
 .card_header2 {
   display: flex;
@@ -454,4 +444,308 @@ footer {
 
 .icon:hover {
   color: #0073e6;
+}
+
+@media screen and (max-width: 900px) {
+  .menu ul {
+      text-align: center;
+      padding: 10px 0;
+  }
+  
+  .menu ul li {
+      display: block;
+      margin: 10px 0;
+  }
+  
+  header {
+      text-align: center;
+  }
+  
+  .card {
+      width: 90%;
+  }
+  
+  .article-section {
+      flex-direction: column;
+  }
+
+  .article-section article {
+      width: 90%;
+      margin: 10px auto;
+  }
+  
+  .article-section img {
+      max-width: 100%;
+  }
+
+  .article-section h2 {
+      font-size: 1.2rem;
+      margin-top: 10px;
+  }
+
+  .article-section p {
+      font-size: 1rem;
+  }
+
+  .article-section a {
+      margin-top: 10px;
+  }
+
+  .comments {
+      margin-top: 20px;
+  }
+
+  .section-1 {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .pro h2 {
+      font-size: 1.5em;
+  }
+
+  .pro hr {
+      width: 100%;
+  }
+
+  .card {
+      width: 48%;
+      margin: 10px auto;
+  }
+
+  .section-2,
+  .section-4 {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .flip-card {
+    width: 70%;
+    margin-bottom: 2em;
+  }
+
+  .posicao {
+    flex-direction: column ;
+    align-items: center;
+  }
+  .medico{
+    width: 100%;
+    margin-bottom: -4px;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  /* QUEM SOMOS */
+#conheca {
+  text-align: center;
+  transition: 0.5s;
+  color: #775382;
+  font-size: 2.5em;
+  line-height: normal;
+  font-weight: 700;
+  margin-bottom: 0.5em;
+}   
+p{
+  text-align: center;
+  transition: 0.5s;
+  color: #775382;
+}
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 25%;
+  position: relative;
+  width: 100vw;
+  max-height: 100%;
+  background-color: #ffffff;
+  padding: 2em 1.2em;
+  border: 0;
+  margin: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+
+  & > p {
+    width: 100vw;
+    box-sizing: border-box;
+    padding: 10px;
+  }
+
+  & > #conheca2 {
+    width: 100vw;
+  }
+}
+.card2 {
+  padding: 0;
+  margin: 0;
+  width: 24em;
+  height: 380px;
+  display: flex;
+  justify-content: space-between;
+  background: #f2f8f9;
+  border: 1px solid white;
+  margin-top: 10%;
+  border-radius: 5%;
+}
+.form2 {
+  padding: 0;
+  margin: 0;
+}
+.tudo2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -9%;
+  padding: 0;
+}
+.card_header2 {
+  display: flex;
+  align-items: center;
+}
+
+.negoço{
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  right: 59px;
+  margin-right: 10em;
+}
+
+.card svg {
+  color: #7878bd;
+  margin-bottom: 20px;
+  margin-right: 5px;
+}
+
+.form_heading {
+  padding-bottom: 20px;
+  font-size: 21px;
+  color: #7878bd;
+  margin-top: -100%;
+}
+
+.field {
+  padding-bottom: 10px;
+  /* margin-top: 20%;
+  margin-right: -29%; */
+}
+.field2 {
+  padding-bottom: 10px;
+  /* margin-top: 33%;
+  margin-right: -25%; */
+}
+.telefone{
+  padding-bottom: 10px;
+  /* margin-top: 45%;
+  margin-left: ; */
+}
+.field4 {
+  padding-bottom: 10px;
+  /* margin-top: 33%;
+  margin-right: -25%; */
+  margin: 10px;
+} 
+.nascimento{
+  width: 15.6em;
+  padding-left: 3.4em;
+}
+.input {
+  border-radius: 5px;
+  background-color: rgb(255, 232, 236);
+  padding: 5px;
+  width: 72%;
+  color: #000000;
+  border: 1px solid #dadaf7;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.input:focus-visible {
+  outline: 1px solid #aeaed6;
+}
+
+.input::placeholder {
+  color: #bcbcdf;
+}
+
+label {
+  color: #B2BAC8;
+  font-size: 12px;
+  display: flex;
+  padding-bottom: 4px;
+  
+}
+
+.button2 {
+  background-color: rgb(255, 143, 162);
+  margin-top: -20px;
+  font-size: 10px;
+  padding: 7px 12px;
+  height: auto;
+  font-weight: 500;
+  color: white;
+  border: none;
+  
+}
+
+.button2:hover {
+  background-color: pink;
+}
+.imagem_cadastro{
+  width: 12em;
+  margin-top: -12px;
+}
+#conheca2 {
+  text-align: center;
+  transition: 0.5s;
+  color: #775382;
+  font-size: 2.5em;
+  line-height: normal;
+  font-weight: 700;
+  margin-bottom: 0.5em;
+  margin-top: 3%;
+}   
+/* Estilos para o botão */
+.link{
+  padding: 8px 12px;
+  background-color: rgb(255, 132, 152);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  width: 35%;
+  margin-left: 90px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilos quando o cursor passa sobre o botão */
+.link:hover {
+  background-color: rgb(253, 161, 176);  
+  display: flex;
+  align-items: center;
+}
+/* Estilos para o botão */
+.ver-mais {
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilos quando o cursor passa sobre o botão */
+.ver-mais:hover {
+  background-color: #0056b3;
+  display: flex;
+  align-items: center;
+}
 }
