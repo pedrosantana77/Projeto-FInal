@@ -23,6 +23,27 @@ form.addEventListener('submit', function (e) {
     //     <p>Data de Nascimento: ${dataNascimento}</p>
     // `;
     alert("Usuario " + username + " cadastrado")
+    localStorage.setItem("usuario", username)
+});
+const formComentario = document.querySelector('#comentario');
+
+formComentario.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    const titulo = document.getElementById('titulo').value;
+    const texto = document.getElementById('texto').value;
+
+    console.log('Título:', titulo);
+    console.log('Texto:', texto);
+
+    // localStorage.setItem("usuario", username)
+    const displayData = document.getElementById('display-data');
+    displayData.innerHTML = `
+        <p class="comentario-titulo">Título: ${titulo}</p>
+        <p class="comentario-texto">Comentário: ${texto}</p>
+    `;
+    // alert("Usuario " + username + " cadastrado")
+
 });
 
 AOS.init();
