@@ -15,14 +15,14 @@ form.addEventListener('submit', function (e) {
     console.log('Data de Nascimento:', dataNascimento);
 
 
-    const displayData = document.getElementById('display-data');
-    console.log(displayData)
-    displayData.innerHTML = `
-        <p>Nome: ${username}</p>
-        <p>Endereço: ${endereco}</p>
-        <p>Telefone: ${telefone}</p>
-        <p>Data de Nascimento: ${dataNascimento}</p>
-    `;
+    // const displayData = document.getElementById('display-data');
+    // displayData.innerHTML = `
+    //     <p class="nome">Nome: ${username}</p>
+    //     <p>Endereço: ${endereco}</p>
+    //     <p>Telefone: ${telefone}</p>
+    //     <p>Data de Nascimento: ${dataNascimento}</p>
+    // `;
+    alert("Usuario " + username + " cadastrado")
 });
 
 AOS.init();
