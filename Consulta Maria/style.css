@@ -102,7 +102,7 @@ html{
     padding-right: 16px;
 
   }
-  .card2 {
+  .form-card2 {
   background-color: red;
     /* width: 60em; */
     /* height: 500px; */
@@ -277,7 +277,7 @@ html{
     /* left: 60em; */
     /* top: 15.3em; */
     }
-    .card2 {
+    .form-card2 {
      flex-direction: column;
      width: 100%;
      /* background-color: red; */
