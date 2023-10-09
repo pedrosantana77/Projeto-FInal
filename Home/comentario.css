@@ -1,7 +1,7 @@
 .comments-container {
     max-width: 300px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 7px;
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.1);
@@ -19,7 +19,7 @@
 
 #comment-input {
     flex: 1;
-    padding: 10px;
+    padding: 0px;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 14px;

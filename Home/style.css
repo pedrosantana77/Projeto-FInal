@@ -394,7 +394,9 @@ label {
   color: white;
   border: none;
 }
-
+#menu {
+  display: none;
+}
 .button2:hover {
   background-color: pink;
   transition: background-color 0.3s ease;
@@ -451,10 +453,23 @@ footer {
 .icon:hover {
   color: #0073e6;
 }
-@media screen and (max-width: 800px) {
+#whatsapp{
+  width: 50px;
+  height: auto;
+}
+@media(max-width: 800px) {
+  #menu {
+    display: block;
+    cursor: pointer;
+  }
+  #ul {
+    flex-direction: column;
+    height: fit-content ;
+  }
   .menu ul {
       text-align: center;
       padding: 0px 0;
+      display: none;
   }
   
   .menu ul li {
@@ -464,6 +479,10 @@ footer {
   
   header {
       text-align: center;
+  }
+
+  #ul.active {
+    display: flex   ;
   }
   
   .card {
@@ -531,11 +550,7 @@ footer {
     background-color:pink;
   }
   
-  .menu ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
+
   
   .menu ul li {
     display: inline-block;
@@ -571,12 +586,6 @@ footer {
     border: 1px solid #ccc;
   }
   
-  header {
-    background-color: pink;
-    color: #fff;
-    padding: 10px 0;
-  }
-  
   nav ul {
     list-style: none;
     text-align: center;
@@ -599,7 +608,6 @@ footer {
   nav ul li a:hover {
     color: pink;
   }
-  
   .flip-card {
     width: 79%;
     margin-bottom: 2em;
@@ -622,9 +630,9 @@ footer {
   text-align: center;
   transition: 0.5s;
   color: #775382;
-  font-size: 2.5em;
+  font-size: 2.0em;
   line-height: normal;
-  font-weight: 700;
+  font-weight: 650;
   margin-bottom: 0.5em;
 }   
 p{

@@ -1,4 +1,3 @@
-
 const form = document.querySelector('.form');
 
 form.addEventListener('submit', function (e) {
@@ -45,5 +44,12 @@ formComentario.addEventListener('submit', function (e) {
     // alert("Usuario " + username + " cadastrado")
 
 });
+
+const menu = document.querySelector("#menu")
+const ul = document.querySelector("#ul")
+
+menu.addEventListener("click", ()=>{
+    ul.classList.toggle("active")
+})
 
 AOS.init();
